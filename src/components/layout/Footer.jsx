@@ -101,8 +101,8 @@ export default function Footer() {
       <div className="border-t border-stone-800/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-stone-500 text-xs">
-            © {new Date().getFullYear()} BuildCraft Construction, Inc. All
-            rights reserved.
+            © {new Date().getFullYear()} john Carlo Goco, Inc. All rights
+            reserved.
           </p>
           <div className="flex items-center gap-3">
             {socials.map(({ icon: Icon, href, label }) => (
