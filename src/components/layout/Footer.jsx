@@ -1,34 +1,34 @@
-import { Link } from 'react-router-dom';
-import { HardHat, Phone, Mail, MapPin, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
+import { Link } from "react-router-dom";
+import { HardHat, Phone, Mail, MapPin } from "lucide-react";
+import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 
 const footerLinks = {
   Company: [
-    { label: 'About Us', path: '/about' },
-    { label: 'Our Team', path: '/about#team' },
-    { label: 'Careers', path: '#' },
-    { label: 'News', path: '#' },
+    { label: "About Us", path: "/about" },
+    { label: "Our Team", path: "/about#team" },
+    { label: "Careers", path: "#" },
+    { label: "News", path: "#" },
   ],
   Services: [
-    { label: 'Commercial', path: '/services' },
-    { label: 'Residential', path: '/services' },
-    { label: 'Industrial', path: '/services' },
-    { label: 'Infrastructure', path: '/services' },
+    { label: "Commercial", path: "/services" },
+    { label: "Residential", path: "/services" },
+    { label: "Industrial", path: "/services" },
+    { label: "Infrastructure", path: "/services" },
   ],
   Projects: [
-    { label: 'All Projects', path: '/projects' },
-    { label: 'Commercial', path: '/projects' },
-    { label: 'Residential', path: '/projects' },
-    { label: 'Industrial', path: '/projects' },
+    { label: "All Projects", path: "/projects" },
+    { label: "Commercial", path: "/projects" },
+    { label: "Residential", path: "/projects" },
+    { label: "Industrial", path: "/projects" },
   ],
 };
 
 const socials = [
-  { icon: Facebook, href: '#', label: 'Facebook' },
-  { icon: Instagram, href: '#', label: 'Instagram' },
-  { icon: Linkedin, href: '#', label: 'LinkedIn' },
-  { icon: Youtube, href: '#', label: 'YouTube' },
+  { icon: FaFacebook, href: "#", label: "Facebook" },
+  { icon: FaInstagram, href: "#", label: "Instagram" },
+  { icon: FaLinkedin, href: "#", label: "LinkedIn" },
+  { icon: FaYoutube, href: "#", label: "YouTube" },
 ];
-
 export default function Footer() {
   return (
     <footer className="bg-stone-950 border-t border-stone-800/60">
@@ -45,7 +45,8 @@ export default function Footer() {
             </span>
           </Link>
           <p className="text-stone-400 text-sm leading-relaxed mb-6 max-w-xs">
-            Philippines' trusted construction partner since 1999. We build structures that endure and communities that thrive.
+            Philippines' trusted construction partner since 1999. We build
+            structures that endure and communities that thrive.
           </p>
           {/* Contact info */}
           <ul className="space-y-3 text-sm text-stone-400">
@@ -55,11 +56,21 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-3">
               <Phone className="w-4 h-4 text-orange-500 shrink-0" />
-              <a href="tel:+63283456789" className="hover:text-white transition-colors">+63 2 8345 6789</a>
+              <a
+                href="tel:+63283456789"
+                className="hover:text-white transition-colors"
+              >
+                +63 2 8345 6789
+              </a>
             </li>
             <li className="flex items-center gap-3">
               <Mail className="w-4 h-4 text-orange-500 shrink-0" />
-              <a href="mailto:hello@buildcraft.ph" className="hover:text-white transition-colors">hello@buildcraft.ph</a>
+              <a
+                href="mailto:hello@buildcraft.ph"
+                className="hover:text-white transition-colors"
+              >
+                hello@buildcraft.ph
+              </a>
             </li>
           </ul>
         </div>
@@ -90,7 +101,8 @@ export default function Footer() {
       <div className="border-t border-stone-800/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-stone-500 text-xs">
-            © {new Date().getFullYear()} BuildCraft Construction, Inc. All rights reserved.
+            © {new Date().getFullYear()} BuildCraft Construction, Inc. All
+            rights reserved.
           </p>
           <div className="flex items-center gap-3">
             {socials.map(({ icon: Icon, href, label }) => (
