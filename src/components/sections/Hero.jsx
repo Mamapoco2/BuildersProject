@@ -87,7 +87,7 @@ export default function Hero() {
       {/* Wipe overlay */}
       <div
         ref={overlayRef}
-        className="absolute inset-0 z-30 bg-orange-500 origin-right"
+        className="absolute inset-0 z-30 bg-red-500 origin-right"
         style={{ transformOrigin: "right" }}
       />
 
@@ -98,8 +98,8 @@ export default function Hero() {
           alt="Construction site"
           className="w-full h-full object-cover object-center scale-110"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-stone-950 via-stone-950/80 to-stone-950/30" />
-        <div className="absolute inset-0 bg-gradient-to-t from-stone-950 via-transparent to-stone-950/20" />
+        <div className="absolute inset-0 bg-linear-to-r from-stone-950 via-stone-950/80 to-stone-950/30" />
+        <div className="absolute inset-0 bg-linear-to-t from-stone-950 via-transparent to-stone-950/20" />
       </div>
 
       {/* Grid pattern */}
@@ -110,7 +110,7 @@ export default function Hero() {
         {particles.map((pos, i) => (
           <div
             key={i}
-            className="dot absolute w-1 h-1 rounded-full bg-orange-500/30"
+            className="dot absolute w-1 h-1 rounded-full bg-red-500/30"
             style={{
               left: `${pos.left}%`,
               top: `${pos.top}%`,
@@ -125,10 +125,10 @@ export default function Hero() {
           {/* Badge */}
           <div
             ref={badgeRef}
-            className="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/30 rounded-sm px-4 py-1.5 mb-8"
+            className="inline-flex items-center gap-2 bg-red-500/10 border border-red-500/30 rounded-sm px-4 py-1.5 mb-8"
           >
-            <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse" />
-            <span className="font-heading font-semibold text-orange-400 text-sm tracking-widest uppercase">
+            <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
+            <span className="font-heading font-semibold text-red-400 text-sm tracking-widest uppercase">
               Philippines' Premier Construction Partner
             </span>
           </div>
@@ -177,7 +177,7 @@ export default function Hero() {
               { v: "98%", l: "On-Time" },
             ].map(({ v, l }) => (
               <div key={l}>
-                <div className="font-display text-3xl lg:text-4xl text-orange-500 tracking-wider">
+                <div className="font-display text-3xl lg:text-4xl text-red-500 tracking-wider">
                   {v}
                 </div>
                 <div className="font-heading text-stone-400 text-sm tracking-widest uppercase mt-1">

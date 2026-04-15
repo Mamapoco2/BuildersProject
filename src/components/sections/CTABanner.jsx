@@ -34,19 +34,19 @@ export default function CTABanner() {
       className="py-24 bg-stone-950 relative overflow-hidden"
     >
       {/* Orange accent bar */}
-      <div className="absolute left-0 top-0 bottom-0 w-1 bg-orange-500" />
+      <div className="absolute left-0 top-0 bottom-0 w-1 bg-red-500" />
       {/* BG pattern */}
       <div className="absolute inset-0 grid-bg opacity-30" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div className="bg-gradient-to-r from-orange-500/10 via-orange-500/5 to-transparent border border-orange-500/20 rounded-xl p-10 lg:p-16">
+        <div className="bg-linear-to-r from-red-500/10 via-red-500/5 to-transparent border border-red-500/20 rounded-xl p-10 lg:p-16">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
             <div className="space-y-4 text-center lg:text-left">
               <div
                 data-a
-                className="inline-flex items-center gap-2 text-orange-500"
+                className="inline-flex items-center gap-2 text-red-500"
               >
-                <div className="h-px w-8 bg-orange-500" />
+                <div className="h-px w-8 bg-red-500" />
                 <span className="font-heading font-semibold text-sm tracking-widest uppercase">
                   Start Your Project
                 </span>
@@ -75,7 +75,7 @@ export default function CTABanner() {
               </Button>
               <a
                 href="tel:+63283456789"
-                className="inline-flex items-center gap-3 px-8 py-4 border-2 border-stone-700 rounded-sm text-stone-300 hover:border-orange-500 hover:text-orange-400 transition-all duration-300 font-heading font-semibold tracking-wider uppercase text-sm w-full sm:w-auto justify-center"
+                className="inline-flex items-center gap-3 px-8 py-4 border-2 border-stone-700 rounded-sm text-stone-300 hover:border-red-500 hover:text-red-400 transition-all duration-300 font-heading font-semibold tracking-wider uppercase text-sm w-full sm:w-auto justify-center"
               >
                 <Phone className="w-4 h-4" />
                 +63 2 8345 6789

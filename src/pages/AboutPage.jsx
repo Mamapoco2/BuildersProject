@@ -90,16 +90,16 @@ export default function AboutPage() {
             alt=""
             className="w-full h-full object-cover opacity-15"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-stone-950/50 via-stone-950/80 to-stone-950" />
+          <div className="absolute inset-0 bg-linear-to-b from-stone-950/50 via-stone-950/80 to-stone-950" />
         </div>
         <div className="absolute inset-0 grid-bg opacity-20" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             data-a
-            className="inline-flex items-center gap-2 text-orange-500 mb-4"
+            className="inline-flex items-center gap-2 text-red-500 mb-4"
           >
-            <div className="h-px w-8 bg-orange-500" />
+            <div className="h-px w-8 bg-red-500" />
             <span className="font-heading font-semibold text-sm tracking-widest uppercase">
               About Us
             </span>
@@ -128,7 +128,7 @@ export default function AboutPage() {
           >
             {stats.map(({ value, label }) => (
               <div key={label}>
-                <div className="font-display text-4xl lg:text-5xl text-orange-500 tracking-wider">
+                <div className="font-display text-4xl lg:text-5xl text-red-500 tracking-wider">
                   {value}
                 </div>
                 <div className="font-heading text-stone-400 text-sm tracking-widest uppercase mt-1">
@@ -172,10 +172,10 @@ export default function AboutPage() {
               <div
                 data-mv
                 key={label}
-                className="bg-stone-900 border border-stone-800 rounded-lg p-8 hover:border-orange-500/30 transition-colors"
+                className="bg-stone-900 border border-stone-800 rounded-lg p-8 hover:border-red-500/30 transition-colors"
               >
-                <div className="w-12 h-12 bg-orange-500/10 border border-orange-500/20 rounded-sm flex items-center justify-center mb-5">
-                  <Icon className="w-6 h-6 text-orange-500" />
+                <div className="w-12 h-12 bg-red-500/10 border border-red-500/20 rounded-sm flex items-center justify-center mb-5">
+                  <Icon className="w-6 h-6 text-red-500" />
                 </div>
                 <h3 className="font-heading font-bold text-2xl text-white mb-3">
                   {label}
@@ -206,14 +206,14 @@ export default function AboutPage() {
                   className={`tl-item relative flex items-start gap-6 md:gap-0 ${i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}
                 >
                   {/* Dot */}
-                  <div className="absolute left-6 md:left-1/2 w-4 h-4 bg-orange-500 rounded-full -translate-x-1/2 mt-1 shrink-0 z-10" />
+                  <div className="absolute left-6 md:left-1/2 w-4 h-4 bg-red-500 rounded-full -translate-x-1/2 mt-1 shrink-0 z-10" />
 
                   {/* Content */}
                   <div
                     className={`ml-14 md:ml-0 md:w-[calc(50%-2rem)] ${i % 2 === 0 ? "md:pr-12 md:text-right" : "md:pl-12"}`}
                   >
-                    <div className="bg-stone-900 border border-stone-800 rounded-lg p-6 hover:border-orange-500/30 transition-colors">
-                      <span className="font-display text-3xl text-orange-500 tracking-wider">
+                    <div className="bg-stone-900 border border-stone-800 rounded-lg p-6 hover:border-red-500/30 transition-colors">
+                      <span className="font-display text-3xl text-red-500 tracking-wider">
                         {item.year}
                       </span>
                       <h3 className="font-heading font-bold text-xl text-white mt-1 mb-2">
@@ -247,18 +247,18 @@ export default function AboutPage() {
             {team.map((member) => (
               <div
                 key={member.id}
-                className="team-card group bg-stone-900 border border-stone-800 rounded-lg overflow-hidden hover:border-orange-500/30 transition-colors"
+                className="team-card group bg-stone-900 border border-stone-800 rounded-lg overflow-hidden hover:border-red-500/30 transition-colors"
               >
-                <div className="aspect-[3/4] overflow-hidden relative">
+                <div className="aspect-3/4 overflow-hidden relative">
                   <img
                     src={member.image}
                     alt={member.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-stone-950 to-transparent opacity-60" />
+                  <div className="absolute inset-0 bg-linear-to-t from-stone-950 to-transparent opacity-60" />
                   <a
                     href={member.linkedin}
-                    className="absolute bottom-4 right-4 w-9 h-9 bg-orange-500 rounded-sm flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300"
+                    className="absolute bottom-4 right-4 w-9 h-9 bg-red-500 rounded-sm flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300"
                   >
                     <FaLinkedin className="w-4 h-4 text-white" />
                   </a>
@@ -267,7 +267,7 @@ export default function AboutPage() {
                   <h3 className="font-heading font-bold text-xl text-white">
                     {member.name}
                   </h3>
-                  <div className="text-orange-500 text-xs font-heading font-semibold tracking-widest uppercase mt-1 mb-3">
+                  <div className="text-red-500 text-xs font-heading font-semibold tracking-widest uppercase mt-1 mb-3">
                     {member.role}
                   </div>
                   <p className="text-stone-400 text-sm leading-relaxed">

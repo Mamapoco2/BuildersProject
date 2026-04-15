@@ -37,11 +37,11 @@ export default function Footer() {
         {/* Brand */}
         <div className="lg:col-span-2">
           <Link to="/" className="flex items-center gap-2.5 mb-5">
-            <div className="w-9 h-9 bg-orange-500 flex items-center justify-center rounded-sm">
+            <div className="w-9 h-9 bg-red-500 flex items-center justify-center rounded-sm">
               <HardHat className="w-5 h-5 text-white" />
             </div>
             <span className="font-display text-2xl tracking-widest text-white">
-              BUILD<span className="text-orange-500">CRAFT</span>
+              BUILD<span className="text-red-500">CRAFT</span>
             </span>
           </Link>
           <p className="text-stone-400 text-sm leading-relaxed mb-6 max-w-xs">
@@ -51,11 +51,11 @@ export default function Footer() {
           {/* Contact info */}
           <ul className="space-y-3 text-sm text-stone-400">
             <li className="flex items-start gap-3">
-              <MapPin className="w-4 h-4 text-orange-500 mt-0.5 shrink-0" />
+              <MapPin className="w-4 h-4 text-red-500 mt-0.5 shrink-0" />
               <span>12F GT Tower, Ayala Ave, Makati City, 1226</span>
             </li>
             <li className="flex items-center gap-3">
-              <Phone className="w-4 h-4 text-orange-500 shrink-0" />
+              <Phone className="w-4 h-4 text-red-500 shrink-0" />
               <a
                 href="tel:+63283456789"
                 className="hover:text-white transition-colors"
@@ -64,7 +64,7 @@ export default function Footer() {
               </a>
             </li>
             <li className="flex items-center gap-3">
-              <Mail className="w-4 h-4 text-orange-500 shrink-0" />
+              <Mail className="w-4 h-4 text-red-500 shrink-0" />
               <a
                 href="mailto:hello@buildcraft.ph"
                 className="hover:text-white transition-colors"
@@ -86,7 +86,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <Link
                     to={link.path}
-                    className="text-sm text-stone-400 hover:text-orange-400 transition-colors"
+                    className="text-sm text-stone-400 hover:text-red-400 transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -110,7 +110,7 @@ export default function Footer() {
                 key={label}
                 href={href}
                 aria-label={label}
-                className="w-8 h-8 rounded-sm bg-stone-800 flex items-center justify-center text-stone-400 hover:bg-orange-500 hover:text-white transition-all duration-200"
+                className="w-8 h-8 rounded-sm bg-stone-800 flex items-center justify-center text-stone-400 hover:bg-red-500 hover:text-white transition-all duration-200"
               >
                 <Icon className="w-4 h-4" />
               </a>
